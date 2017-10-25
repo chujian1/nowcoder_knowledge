@@ -1,0 +1,32 @@
+1.
+DHTML 的动态样式的作用是：
+使网页作者改变内容的外部特征而不强制用户再次下载全部内容
+DHTML 不是 W3C 标准 DHTML 指动态 HTML（Dynamic HTML）,DHTML实现了网页从Web服务器下载后无需再经过服务的处理，而在浏览器中直接动态地更新网页的内容、排版样式和动画的功能,包括：动态内容和动态排版样式
+2.
+在bootstrap中， 关于导航条：
+应该将被包裹的元素放到navbar-collapse类中
+表单应该放置于navbar-form内
+可以使用navbar-left和navbar-right来对齐导航条
+可以使用navbar-fixed-top和navbar-fixed-bottom来将导航条固定到顶部或底部
+3.
+<meta name="viewport" content="width=device-width, initial-scale=1">作用：
+表示支持响应式设计
+content中多个属性的设置要用逗号加空格隔开，否则起不到作用
+width ：viewport的宽度
+height ： viewport的高度
+initial-scale ： 初始的缩放比例
+minimum-scale ： 允许用户缩放到的最小比例
+maximum-scale ： 允许用户缩放到的最大比例
+user-scalable ： 用户是否可以手动缩放
+4.
+CSS中Position属性有四个可选值，它们分别是：static、absolute、fixed、relative
+static：默认情况下的位置，无定位
+absolute：元素框从文档流中完全删除，能够很准确的将元素移动到你想要的位置
+fixed：相对于窗口的固定定位
+relative：相对定位，是相对于元素默认的位置的定位，它原本所占的空间仍保留
+5.
+设置readonly = true，页面上无法修改内容，但是可以通过JavaScript修改,内容会被提交
+设置disabled = true,无法修改内容，也不会被提交
+6.
+type的属性：text submit button
+date是h5新增的属性
