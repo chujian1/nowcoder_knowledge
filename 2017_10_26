@@ -1,0 +1,52 @@
+1.
+盒子模型：
+IE盒子和标准盒子模型都是由四个部分组成：padding margin border content
+不同的是在标准盒子模型中content是一个独立的部分不包含其他部分！！但是在IE盒子模型中content包含了border,padding,是一个总体的概念！！
+2.
+去掉超链接的下划线：
+a{text_decoration:none}
+3.
+<head>标签中必不可少的是：<title>
+head 部分：<base><link><meta><script><style><title>
+<title>定义文档的标题，它是 head 部分中唯一必需的元素
+4.
+<!DOCTYPE html>
+如果没有文档类型说明，所有浏览器默认混杂模式
+它的责任就是告诉浏览器文档使用哪种html或者xhtml规范
+不同文档模式主要影响CSS内容的呈现，尤其是浏览器对盒模型的解析
+不同浏览器在混杂模式下的行为差异非常大，如果不使用某些hack技术，跨浏览器的行为根本就没有一致性可言
+5.
+边距的单位：
+em：是一个相对长度单位，会继承父元素的大小，类似与百分比
+px：像素，固定单位
+pt：磅，绝对长度单位 ， pt的效果是不随浏览器分辨率的变化而发生视觉的变化
+6.
+BFC（Block Formatting Context）
+常见的文档流分为：定位流，浮动流，普通流
+BFC是普通流中的一种
+BFC是一个具有特殊css样式的html盒子，这些特殊样式满足只要满足一项，就说明这个盒子是BFC
+float: left | right
+position: fixed | absolute
+display: inline-block | table-cell | table-caption | flex | inline-flex
+overflow: hidden | scroll | auto
+eg:overfolw:hidden;新创建一个BFC,可以解决外边距折叠，容器无高度包含浮动元素，阻止文字环绕
+BFC就是页面上的一个隔离的独立容器，容器里面的子元素是不会影响到外面的元素。
+BFC的区域不会与float的元素区域重叠。
+计算BFC的高度时，浮动子元素也参与计算。
+BFC意为”块级格式化上下文”。
+7.
+关于Cookie:
+记录访问者的信息
+在页面之间传递信息
+自动识别用户
+不能对数据库进行操作
+8.
+IE FF的css区别：
+IE6.0的div的内嵌div可以把父级的高度撑大，而FireFox不可以，要自己设置高度
+当设置为三列布局时，IE6.0的float宽度不能达到100％，而FireFox可以。当设置为两列布局时，两种浏览器都可以
+火狐浏览器中非float的div前面有同一父级的float的div，此div若有背景图，要使用clear：both，才能显示背图，而IE6.0中不用使用clear：both
+在[text-decoration:underline]的属性下，IE6.0显示的下划线会比FireFox低一点。在FireFox中，部分笔画会在下划线的下面1个象素左右。
+
+
+ 
+
