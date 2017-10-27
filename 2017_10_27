@@ -1,0 +1,10 @@
+1.
+英文字母全部转为大写:
+text-transform:uppercase;
+2.
+head部分中的JavaScripts会在被调用的时候才执行。
+body部分中的JavaScripts会在页面加载的时候被执行。  
+3.
+input 属性的值：
+button checkbox file hidden image password radio reset submit text
+
