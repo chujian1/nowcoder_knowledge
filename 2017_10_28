@@ -1,0 +1,74 @@
+1.
+open() 方法可以查找一个已经存在或者新建的浏览器窗口。
+语法：
+window.open([URL], [窗口名称], [参数字符串])
+参数说明:
+URL：可选参数，在窗口中要显示网页的网址或路径。如果省略这个参数，或者它的值是空字符串，那么窗口就不显示任何文档。
+窗口名称：可选参数，被打开窗口的名称。
+    1.该名称由字母、数字和下划线字符组成。
+    2."_top"、"_blank"、"_selft"具有特殊意义的名称。
+       _blank：在新窗口显示目标网页
+       _self：在当前窗口显示目标网页
+       _top：框架网页中在上部窗口中显示目标网页
+    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。
+    4.name 不能包含有空格。
+参数字符串：可选参数，设置窗口参数，各参数用逗号隔开。
+2.
+ECMAScript认为undefined是从null派生出来的，因此将它们定义为不严格意义上的相等。
+alert(null===undefined) ;返回false;
+alert(undefined==null)；返回true;
+undefined 和null是不同的数据类型
+3.
+在进行算术运算时，+ 号会使数字隐式转换为字符串，其他运算符号是字符串隐式转换为数字
+4.
+基本(primitive type)数据类型：Number，String，Boolean，Undefined，Null
+复杂数据类型：Object，Array，Function，RegExp，Date，Error
+全局数据类型：Math
+内置类型（built-in）：Null Undefined Boolean Number String Object Symbol
+5.
+promise 对象：
+一个promise可能有三种状态：等待（pending）、已完成（fulfilled）、已拒绝（rejected）
+一个promise的状态只可能从“等待”转到“完成”态或者“拒绝”态，不能逆向转换，同时“完成”态和“拒绝”态不能相互转换
+promise必须实现then方法（可以说，then就是promise的核心），而且then必须返回一个promise，同一个promise的then可以调用多次，并且回调的执行顺序跟它们被定义时的顺序一致
+then方法接受两个参数，第一个参数是成功时的回调，在promise由“等待”态转换到“完成”态时调用，另一个是失败时的回调，在promise由“等待”态转换到“拒绝”态时调用。同时，then可以接受另一个promise传入，也接受一个“类then”的对象或方法，即thenable对象。Query
+6.
+jQuery：
+jQuery siblings() 方法
+siblings() 方法返回被选元素的所有同胞元素。
+下面的例子返回 <h2> 的所有同胞元素：
+实例
+$(document).ready(function(){
+  $("h2").siblings();
+});
+下面的例子返回属于 <h2> 的同胞元素的所有 <p> 元素：
+实例
+$(document).ready(function(){
+  $("h2").siblings("p");
+});
+
+jQuery next() 方法
+
+next() 方法返回被选元素的下一个同胞元素。该方法只返回一个元素。
+下面的例子返回 <h2> 的下一个同胞元素：
+实例
+$(document).ready(function(){
+  $("h2").next();
+});
+
+jQuery find() 方法
+
+find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。
+下面的例子返回属于 <div> 后代的所有 <span> 元素：
+实例
+$(document).ready(function(){
+  $("div").find("span");
+});
+7.
+js中的方法：
+eval：返回字符串表达式中的值
+unEscape：返回字符串ASCI码
+escape：返回字符的编码
+parseFloat：返回实数
+8.
+arr是个对象数组，reverse和sort只是改了arr的内容，返回的依然是arr对象本身，而concat返回的是新的对象，这里考的点是浅拷贝和深度拷贝，concat和slice常用来做深度拷贝
+
