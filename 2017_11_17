@@ -1,0 +1,33 @@
+1.
+下面都会转化为0
+Number();
+Number(0);
+Number('');
+Number('0');
+Number(false);
+Number(null);
+Number([]);
+Number([0]);
+2.
+cookie以及localStorage不会伴随着http请求发送到服务器；
+get提交的url会有长度的限制，而post提交的数据则可以比较大；
+在js中可以操作cookie；
+html5中的新增存储方式包括localStorage/sessionsTORAGE；
+3.
+History对象的属性和方法
+length：返回浏览器历史列表中的URL数量
+back()：加载 history 列表中的前一个URL
+forward()：加载 history 列表中的下一个URL
+go()：加载history列表中的某个具体页面
+4.
+table中
+cellpadding：单元边沿与其内容之间的空白
+cellspacing：各个单元格之间的空白
+5.
+javascript只有函数域，没有块作用域的概念，所以在同一个作用域中同一个变量声明多次还是第一次声明那个
+6.
+var x = boolean(false);//x为boolean类型，值为false；
+var y = boolean（0）；//y为boolean值，0；
+当一个值为false的Boolean对象放到条件语句当中的时候，Boolean对象的值会被当作true来计算，但是它本身的值并没有改变，依然是false。
+7.
+var a=b=3；//var a=3；b=3；
